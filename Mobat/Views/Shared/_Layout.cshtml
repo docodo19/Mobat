@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html ng-app="mobat">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/FrontEnd/Styling/Mobat.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+              
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#/game">MobaT</a></li>
+                    <li><a href="#/profile">Profile</a></li>
+                    <li  ng-controller="NavbarController" ><button id="logout" class="btn hidden" ng-click="logout()">Logout</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+ 
+    <div >
+        @RenderBody()
+        <hr />
+        <footer>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="~/Scripts/angular-animate.js"></script>
+    <script src="~/FrontEnd/JS/App.js"></script>
+    <script src="~/FrontEnd/Controllers/NavbarController.js"></script>
+    <script src="~/FrontEnd/Services/MobatFactory.js"></script>
+    <script src="~/FrontEnd/Controllers/HomeController.js"></script>
+    <script src="~/FrontEnd/Controllers/ProfileController.js"></script>
+    <script src="~/FrontEnd/Controllers/LoginController.js"></script>
+    <script src="~/FrontEnd/Controllers/RegisterController.js"></script>
+    <script src="~/FrontEnd/Controllers/LogController.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

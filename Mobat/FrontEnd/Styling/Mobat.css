@@ -1,0 +1,257 @@
+﻿body {
+    margin-top: -20px;
+    margin-bottom: -50px;
+  background: url(http://fc08.deviantart.net/fs71/i/2011/346/8/0/quantum_binary_by_leon_adama-d4iw18j.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.Ctext {
+    color:#ff0000;
+    font-size: 4em;
+    font-family: 'Shadows Into Light', cursive;
+    text-shadow: 2px 2px 2px black;
+}
+
+#login{
+    background-color: #cccaf3;
+    border-radius: 5px;
+}
+
+#logs {
+    background-color: #704628;
+    border-radius: 5px;
+    font-family: 'Helvetica Neue LT Pro';
+    font-size: 2em;
+    color: #ffffff;
+    
+    
+}
+
+#logList{
+    list-style-type: none;
+}
+
+#logList li{
+    display: inline;
+}
+
+#logHeader{
+    margin-top: 70px;
+    background-color: #cccaf3; 
+    font-size: 2em;
+    color: #ff0000;
+    border-bottom: 2px solid black;
+}
+
+#table{
+    background-color: #cccaf3;
+    margin-top: 70px;
+    border-spacing: 25px;
+    border-radius: 5px;
+    font-family: 'Helvetica Neue LT Pro';
+    width: 90%;
+}
+
+#loginDiv{
+    background-color: #ffffff;
+}
+
+#logHeaderList{
+    
+    list-style-type: none;
+}
+
+#logHeaderList li{
+    
+    display: inline;
+}
+
+#register{
+    position: absolute;
+    left: 80%;
+    bottom: 20%;
+}
+
+#email{
+    font-weight:lighter;
+    font-size: 60px;
+    position:relative;
+    left: 420px;
+    bottom: 450px;
+}
+
+#username{
+    font-weight: bold;
+    font-size: 100px;
+    position:relative;
+    left: 380px;
+    bottom: 400px;
+}
+
+#firstName{
+    font-weight: lighter;
+    font-size: 40px;
+    position:relative;
+    bottom: 200px;
+}
+
+#lastName{
+    font-weight: bold;
+    font-size: 50px;
+    position:relative;
+    bottom: 200px;
+    
+}
+
+#editPro{
+    position: relative;
+    left: 370px;
+    bottom: 410px;
+}
+
+#addGame{
+    background-color: #ff6d23;
+    border-radius: 5px;
+    position:relative;
+    left:0;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-left:10px;
+    padding-bottom: 5px;
+}
+
+#logout{
+    position: absolute;
+    left: 87em;
+    top: .5em;
+    background-color: red;
+    -webkit-transition: all .2s ease-in-out;
+}
+#logout:hover{
+    -webkit-transform: scale(1.1);
+}
+
+.page        {
+
+	position:absolute;  
+	width:100%; 
+    height: 100%;
+}
+
+@-webkit-keyframes rotateFall {
+	0% 		{ transform: rotateZ(0deg); }
+	20% 	{ transform: rotateZ(10deg); animation-timing-function: ease-out; }
+	40% 	{ transform: rotateZ(17deg); }
+	60% 	{ transform: rotateZ(16deg); }
+	100% 	{ transform: translateY(100%) rotateZ(17deg); }
+}
+
+/* slide in from the bottom */
+@-webkit-keyframes slideOutLeft {
+	to 		{ transform: translateX(-100%); }
+}
+
+/* rotate out newspaper */
+@-webkit-keyframes rotateOutNewspaper {
+	to 		{ transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+}
+
+/* entering animations --------------------------------------- */
+/* scale up */
+@-webkit-keyframes scaleUp {
+	from 	{ opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+
+/* slide in from the right */
+@-webkit-keyframes slideInRight {
+	from 	{ transform:translateX(100%); }
+	to 		{ transform: translateX(0); }
+}
+
+/* slide in from the bottom */
+@-webkit-keyframes slideInUp {
+	from 	{ transform:translateY(100%); }
+	to 		{ transform: translateY(0); }
+ }
+
+	.ng-enter 			{ z-index: 8888; }
+	.ng-leave 			{ z-index: 9999; }
+
+    .Home.ng-enter 		{ -webkit-animation: scaleUp 0.5s both ease-in; }
+	.Home.ng-leave         { -webkit-transform-origin: 0% 0%; -webkit-animation: rotateFall 1s both ease-in; }
+
+	.Logs.ng-enter 		{ -webkit-animation:slideInRight 0.5s both ease-in; }
+	.Logs.ng-leave        { -webkit-animation:slideOutLeft 0.5s both ease-in; }
+
+	.Profile.ng-leave      { -webkit-transform-origin: 50% 50%; -webkit-animation: rotateOutNewspaper .5s both ease-in; }
+	.Profile.ng-enter 		{ -webkit-animation:slideInUp 0.5s both ease-in; }
+
+	.Register.ng-enter 		{ -webkit-animation:slideInRight 0.5s both ease-in; }
+	.Register.ng-leave        { -webkit-animation:slideOutLeft 0.5s both ease-in; }
+
+    .Login.ng-leave      { -webkit-transform-origin: 50% 50%; -webkit-animation: rotateOutNewspaper .5s both ease-in; }
+	.Login.ng-enter 		{ -webkit-animation:slideInUp 0.5s both ease-in; }
+
+    .Home {
+          background: url(http://fc08.deviantart.net/fs71/i/2011/346/8/0/quantum_binary_by_leon_adama-d4iw18j.jpg) no-repeat center center fixed; 
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+
+    }
+
+.Logs {
+             background: url(http://fc08.deviantart.net/fs71/i/2011/346/8/0/quantum_binary_by_leon_adama-d4iw18j.jpg) no-repeat center center fixed; 
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+}
+
+.Profile {
+              background: url(http://fc08.deviantart.net/fs71/i/2011/346/8/0/quantum_binary_by_leon_adama-d4iw18j.jpg) no-repeat center center fixed; 
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+}
+
+.Register {
+              background: url(http://fc08.deviantart.net/fs71/i/2011/346/8/0/quantum_binary_by_leon_adama-d4iw18j.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ }
+
+.Login {
+              background: url(http://fc08.deviantart.net/fs71/i/2011/346/8/0/quantum_binary_by_leon_adama-d4iw18j.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ }
+
+
+
+
+
+
+/*CSS form Game Page*/
+.gameBox {
+    border: solid black 1px;
+    background-color: #808080;
+    color: #000000;
+    border-radius: 5px;
+    padding-left: 75px;
+}
+
+.gameBoxInner {
+   
+}

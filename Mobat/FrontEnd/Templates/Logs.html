@@ -1,0 +1,64 @@
+﻿
+
+<!--<div id="logHeader">
+    <ul id="logHeaderList">
+        <li>Win/Loss</li>
+        <li>Time Played</li>
+        <li>Comment</li>
+        <li>Win Ratio</li>
+        <li>Total Time Played</li>
+    </ul>
+</div>
+<div id="logs">
+    <ul id="logList" ng-repeat="l in Logs" style="margin-top: 70px;">
+        <li>{{l.victory}}</li>
+        <li>{{l.timePlayed | date : "m"}}</li>
+        <li>{{l.comment}}</li>
+        <li>winLoss Ratios Here</li>
+        <li>Total TimePlayed Here</li>
+        <li><input type="button" value="Remove Log" ng-click="RemoveLog(l.Id)" class="btn btn-lg btn-danger" /></li>
+    </ul>
+</div>-->
+<!--<div id="stats" ng-repeat="s in statArray">
+    {{s.stat.ratio}}
+
+</div>-->
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <img ng-src="{{url}}" style="height:600px; width:800px" />
+            <table id="table" class="table-hover">
+                <thead>
+                    <tr id="logHeader">
+                        <th>
+                            Win/Loss
+                        </th>
+                        <th>
+                            Time Played
+                        </th>
+                        <th>
+                            Comment
+                        </th>
+                        <th>
+                            Total TimePlayed &nbsp;{{totalTimePlayed}}min
+                        </th>
+                    </tr>
+                </thead>
+                <tr ng-repeat="l in Logs" style="font-weight:bold;" ng-animate="slide">
+                    <td>
+                        {{l.victory}}
+                    </td>
+                    <td>
+                        {{l.timePlayed}}&nbsp;min
+                    </td>
+                    <td>
+                        "{{l.comment}}"
+                    </td>
+                    <td>
+                        <input type="button" value="Remove Log" ng-click="removeLog(l.id)" class="btn btn-lg btn-danger" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,107 @@
+﻿
+<!--<div ng-show="editMode">
+    <div ng-repeat="p in profile" style="color:white">
+        <img ng-src="{{p.avatarUrl}}" style="height:400px; width:350px"/>
+        <h1>{{p.userName}}</h1><br />
+        <h4>{{p.email}}</h4>
+        <h4>{{p.firstName}}</h4>
+        <h4>{{p.lastName}}</h4>
+        <hr />
+    </div>
+        <a href ng-click="editMode = !editMode" class="btn btn-primary btn-lg">Edit Profile</a>
+</div>
+
+<div ng-show="!editMode">
+
+    <form role="form">
+
+        <div>
+            <label for="inputFirstName">First Name</label>
+            <input id="inputFirstName" placeholder="{{profile[0].firstName}}" ng-model="profile[0].firstName" required>
+        </div>
+
+        <div>
+            <label for="inputLastName">Last Name</label>
+            <input id="inputLastName" placeholder={{profile[0].lastName}} ng-model="profile[0].lastName" required>
+        </div>
+
+        <div>
+            <label for="inputEmail">Email</label>
+            <input id="inputEmail" placeholder={{profile[0].email}} ng-model="profile[0].email" required>
+        </div>
+
+        <div>
+            <label for="inputAvatarUrl">Avatar URL</label>
+            <input id="inputAvatarUrl" placeholder={{profile[0].avatarUrl}} ng-model="profile[0].avatarUrl" required>
+        </div>
+
+        <div>
+            <button type="submit" class="btn btn-success" ng-click="submit()">Update Profile</button>
+        </div>
+
+    </form>
+
+</div>-->
+
+
+
+
+
+
+
+
+<div class="container" >
+    <div class="row clearfix">
+        <div class="col-md-12" ng-show="editMode">
+            <div class="jumbotron gameBox">
+                <div>
+                    <div ng-repeat="p in profile" style="color:white">
+                        <img ng-src="{{p.avatarUrl}}" style="height:400px; width:350px" />
+                        <h1>{{p.userName}}</h1><br />
+                        <h4>{{p.email}}</h4>
+                        <h4>{{p.firstName}}</h4>
+                        <h4>{{p.lastName}}</h4>
+                        <hr />
+                    </div>
+                    <a ng-click="editMode = !editMode" class="btn btn-primary btn-lg">Edit Profile</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-12" ng-show="!editMode">
+            <div class="jumbotron gameBox">
+                <div>
+
+                    <form role="form">
+
+                        <div>
+                            <label for="inputFirstName">First Name</label>
+                            <input id="inputFirstName" placeholder="{{profile[0].firstName}}" ng-model="profile[0].firstName" class="form-control" required>
+                        </div>
+
+                        <div>
+                            <label for="inputLastName">Last Name</label>
+                            <input id="inputLastName" placeholder={{profile[0].lastName}} ng-model="profile[0].lastName" class="form-control" required>
+                        </div>
+
+                        <div>
+                            <label for="inputEmail">Email</label>
+                            <input id="inputEmail" placeholder={{profile[0].email}} ng-model="profile[0].email" class="form-control" required>
+                        </div>
+
+                        <div>
+                            <label for="inputAvatarUrl">Avatar URL</label>
+                            <input id="inputAvatarUrl" placeholder={{profile[0].avatarUrl}} ng-model="profile[0].avatarUrl" class="form-control" required>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-success" ng-click="submit()">Update Profile</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+</div>

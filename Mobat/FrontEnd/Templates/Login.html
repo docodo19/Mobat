@@ -1,0 +1,29 @@
+﻿
+
+
+
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12" id="login" >
+
+
+            <h1>
+                MOBAT
+            </h1>
+            <h3> The Ultimate MOBA Tracker</h3>
+
+
+            <form ng-submit="login()" style="padding-bottom: 10px;">
+                <label for="username">Username</label>
+                <input name="username" ng-model="username" type="text" class="form-control" /><br />
+                <label for="password">Password</label>
+                <input id="password" name="password" ng-model="password" type="password" class="form-control" /><br />
+                <button id="login-btn" class="btn btn-primary btn-large" type="submit" value="Login" style="width: 100px; margin-left: 180px;">Login</button>
+            </form>
+            <div id="register">
+                <h3>Not a member yet?</h3>
+                <a id="registerLink" ng-href="#/register">Get in the game NOW!</a>
+            </div>
+        </div>
+</div>
+</div>
